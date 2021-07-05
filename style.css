@@ -1,0 +1,11 @@
+.author,.title{
+	display: none;
+}
+
+body {
+background-color: #faf7e3;
+}
+
+.myin {
+	text-indent: 50px;
+}
