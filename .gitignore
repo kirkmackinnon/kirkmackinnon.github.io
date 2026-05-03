@@ -2,3 +2,15 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# mac
+.DS_Store
+
+# R / knitr / quarto cache
+*_cache/
+*.RData
+*.rdb
+*.rdx
+
+# optional
+old cv/
