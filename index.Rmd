@@ -32,7 +32,11 @@ library(knitr)
 
 <br><br>
 <div class="myin">
-Thanks for your interest. I am a molecular & computational biologist trained in the preparation and analysis of RNA-seq, ChIP-seq, DAP-seq, ATAC-seq, and GWA datasets. I am passionate about learning and staying up to date with the literature. I have a proven performance history of competent, publication worthy analyses in several different sequencing related disciplines.
+Thanks for your interest. I am a molecular and computational biologist focused on understanding gene regulatory networks through integrated genomic approaches, including RNA-seq, DAP-seq, and related datasets.
+
+My training spans end-to-end genomics, from DNA and RNA extraction and sequencing library preparation to high-throughput data analysis and modeling. My work emphasizes developing practical, reproducible approaches to analyzing complex biological data.
+
+I am particularly interested in teaching applied bioinformatics, emphasizing clear biological interpretation alongside computational skills, and contributing to the development of collaborative, student-centered research and teaching programs.
 </div>
 <br>
 - Kirk
@@ -93,7 +97,7 @@ for (pubs in 1:nrow(pubsdf)) {
 ![](small_multiPeriods_NoAxes.gif)
 
 
-## Shiny apps
+## Applications
 
 <br>
 
@@ -142,6 +146,8 @@ for (lines in 1:nrow(sites)) {
 
 
 ## CV
+
+[Download CV (PDF)](CVTest.pdf)
 
 ![](CVTest.pdf){width="100%" height="1000"}
 
