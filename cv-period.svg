@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 220"
+     preserveAspectRatio="none">
+
+  <!-- Main periodic curve -->
+  <path id="cv-curve"
+      d="M0 120 
+         C150 40, 150 40, 300 120 
+         S450 200, 600 120 
+         S750 40, 900 120 
+         S1050 200, 1200 120"
+      stroke="#5a7c99"
+      stroke-width="2"
+      fill="none" />
+
+  <!-- Dashed period guide -->
+  <line x1="150" y1="40" x2="750" y2="40"
+      stroke="#9a6f7c"
+      stroke-width="2"
+      stroke-dasharray="12 10"
+      opacity="0.8" />
+
+<circle cx="150" cy="40" r="6" fill="#9a6f7c" />
+<circle cx="750" cy="40" r="6" fill="#9a6f7c" />
+
+
+
+  <!-- Moving dot on curve -->
+  <circle r="5" fill="#5a7c99">
+    <animateMotion dur="8s" repeatCount="indefinite">
+      <mpath href="#cv-curve" />
+    </animateMotion>
+  </circle>
+
+  <!-- Moving dot along period guide -->
+  <circle r="4" fill="#9a6f7c">
+    <animate attributeName="cx"
+             values="150;750;150"
+             dur="8s"
+             repeatCount="indefinite" />
+    <animate attributeName="cy"
+             values="40;40;40"
+             dur="8s"
+             repeatCount="indefinite" />
+  </circle>
+
+</svg>

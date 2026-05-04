@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 220"
+     preserveAspectRatio="none">
+
+  <!-- Blue curve: peak earlier -->
+  <path id="offset-blue"
+        d="M0 120 C100 20, 220 20, 320 120 S540 220, 650 120 S900 20, 1000 120 S1120 220, 1200 120"
+        stroke="#5a7c99"
+        stroke-width="2"
+        fill="none" />
+
+  <!-- Red curve: phase shifted later -->
+  <path id="offset-red"
+        d="M0 70 C140 70, 250 220, 390 190 S620 20, 760 70 S1010 220, 1200 70"
+        stroke="#9a6f7c"
+        stroke-width="2"
+        fill="none"
+        opacity="0.8" />
+
+  <circle r="5" fill="#5a7c99">
+    <animateMotion dur="8s" repeatCount="indefinite">
+      <mpath href="#offset-blue" />
+    </animateMotion>
+  </circle>
+
+  <circle r="5" fill="#9a6f7c">
+    <animateMotion dur="8s" repeatCount="indefinite">
+      <mpath href="#offset-red" />
+    </animateMotion>
+  </circle>
+
+</svg>

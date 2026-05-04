@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 220"
+     preserveAspectRatio="none">
+
+  <path id="period1"
+        d="M0 110 C120 20, 240 20, 360 110 S600 200, 720 110 S960 20, 1200 110"
+        stroke="#5a7c99"
+        stroke-width="2"
+        fill="none" />
+
+  <path id="period2"
+        d="M0 110 C170 20, 340 20, 510 110 S850 200, 1020 110 S1190 20, 1360 110"
+        stroke="#7a8f6a"
+        stroke-width="2"
+        fill="none"
+        opacity="0.75" />
+
+  <path id="period3"
+        d="M0 110 C230 20, 460 20, 690 110 S1150 200, 1380 110"
+        stroke="#9a6f7c"
+        stroke-width="2"
+        fill="none"
+        opacity="0.7" />
+
+  <circle r="5" fill="#5a7c99">
+    <animateMotion dur="7s" repeatCount="indefinite">
+      <mpath href="#period1" />
+    </animateMotion>
+  </circle>
+
+  <circle r="5" fill="#7a8f6a">
+    <animateMotion dur="10s" repeatCount="indefinite">
+      <mpath href="#period2" />
+    </animateMotion>
+  </circle>
+
+  <circle r="5" fill="#9a6f7c">
+    <animateMotion dur="13s" repeatCount="indefinite">
+      <mpath href="#period3" />
+    </animateMotion>
+  </circle>
+
+</svg>

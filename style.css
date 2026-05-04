@@ -3,9 +3,23 @@
 }
 
 body {
-background-color: #faf7e3;
+background: #f5f7fa;
+color: #1f2933;
+font-family: "EB Garamond", "Garamond", serif;
+
+}
+
+h1, h2, h3, nav {
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
 }
 
 .myin {
 	text-indent: 50px;
 }
+
+.signature {
+  margin-top: 2rem;
+}
+
