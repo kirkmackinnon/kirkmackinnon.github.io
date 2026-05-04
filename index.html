@@ -284,17 +284,100 @@ body {
 background: #f5f7fa;
 color: #1f2933;
 font-family: "EB Garamond", "Garamond", serif;
+font-size: 18px;
+line-height: 1.75;
 }
 h1, h2, h3, nav {
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
+
 .myin {
-text-indent: 50px;
+max-width: 720px;
+margin: 0 auto;
+text-indent: 0; 
 }
 .signature {
 margin-top: 2rem;
 }
-</style>
+.pub-entry {
+margin: 2rem 0;
+}
+.pub-meta {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+color: #5f6b76;
+margin-bottom: 0.35rem;
+}
+.pub-title {
+font-size: 1.1rem;
+line-height: 1.35;
+margin-bottom: 0.35rem;
+}
+.pub-authors {
+line-height: 1.45;
+}
+.pub-link {
+margin-top: 0.4rem;
+font-size: 0.95rem;
+}
+.pub-title {
+font-size: 1.25rem;
+line-height: 1.35;
+margin: 0.4rem 0 0.5rem 0;
+font-weight: 600;
+font-family: "EB Garamond", serif;
+}
+.pub-authors {
+font-size: 0.98rem;
+line-height: 1.5;
+color: #2f3a44;
+}
+.pub-meta {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+color: #6b7785;
+font-size: 1.05rem;
+}
+
+h3 {
+font-size: 2.2rem;
+font-weight: 500;
+margin-bottom: 1.5rem;
+}
+.contact {
+margin-top: 1.5rem;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+font-size: 0.95rem;
+color: #4a5560;
+}
+.contact a {
+color: #4a5560;
+text-decoration: none;
+}
+.contact a:hover {
+text-decoration: underline;
+}
+.header-wrap {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin-bottom: 2rem;
+}
+.header-left h1 {
+margin: 0;
+font-size: 2.2rem;
+}
+.header-right {
+text-align: right;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+font-size: 1.05rem;
+line-height: 1.6;
+}
+.header-right a {
+text-decoration: none;
+color: #3a6ea5;
+}
+.header-right a:hover {
+text-decoration: underline;
+}</style>
 
 
 
@@ -402,9 +485,20 @@ display: none;
 <h1 class="tabset tabset-fade"></h1>
 <div id="about-me" class="section level2">
 <h2>About me</h2>
-<div id="hi." class="section level3">
-<h3>Hi.</h3>
-<br><br>
+<div class="header-wrap">
+<div class="header-left">
+<h1>
+Hi, I’m Kirk.
+</h1>
+</div>
+<div class="header-right">
+<p>
+<p><a href="mailto:km5767@nyu.edu">km5767@nyu.edu</a><br>
+<a href="https://github.com/kirkmackinnon">GitHub</a><br>
+<a href="CVTest.pdf">CV</a></p>
+</p>
+</div>
+</div>
 <div class="myin">
 <p>Thanks for your interest. I am a molecular and computational
 biologist focused on understanding gene regulatory networks through
@@ -428,65 +522,141 @@ student-centered research and teaching programs.</p>
 </div>
 <!-- ![](multiAmps_noAxes.gif){} -->
 </div>
-</div>
 <div id="publications" class="section level2">
 <h2>Publications</h2>
-<p><b> 2024 </b> Quantitative Plant Biology</p>
-<p><b> Mechanically induced localisation of SECONDARY WALL INTERACTING
-bZIP is associated with thigmomorphogenic and secondary cell wall gene
-expression </b></p>
-<p>Joshua H. Coomey, <b> Kirk J.-M. MacKinnon </b>, Ian W. McCahill,
-Bahman Khahani, Pubudu P. Handakumbura, Gina M. Trabucco, Jessica
-Mazzola, Nicole A. Leblanc, Rithany Kheam, Miriam Hernandez-Romero,
-Kerrie Barry, Lifeng Liu, Ji E. Lee, John P. Vogel, Ronan C. O’Malley,
-James J. Chambers, Samuel P. Hazen</p>
-<p><a href="https://doi.org/10.1017/qpb.2024.5" class="uri">https://doi.org/10.1017/qpb.2024.5</a></p>
+<div class="pub-entry">
+<div class="pub-meta">
+<b> Submitted </b> · Nature Communications
+</div>
+<div class="pub-title">
+<b> Genome-wide transcription factor binding reveals regulatory logic
+and evolutionary divergence in grasses </b>
+</div>
+<div class="pub-authors">
+Bahman Khahani, Leo A. Baumgart, Kirk R. Amundson, Ian W. McCahill, Greg
+A. Gregory, <b>Kirk J.-M. MacKinnon</b>, Xiaocheng Yu, Ritesh Mewalal,
+Anthony Bortolazzo, Yu Zhang, Madelaine E. Bartlett, John P. Vogel, Ian
+K. Blaby, Ronan C. O’Malley, Samuel P. Hazen
+</div>
+</div>
 <hr>
-<p><b> 2021 </b> NA</p>
-<p><b> Mechanically induced localization of SECONDARY WALL INTERACTING
-bZIP is associated with thigmomorphogenic and secondary cell wall gene
-expression </b></p>
-<p>Joshua H. Coomey, <b> Kirk J.-M. MacKinnon </b>, Ian W. McCahill,
-Bahman Khahani, Pubudu P. Handakumbura, Gina M. Trabucco, Jessica
-Mazzola, Nicole A. Leblanc, Rithany Kheam, Miriam Hernandez-Romero,
-Kerrie Barry, Lifeng Liu, Ji E. Lee, John P. Vogel, Ronan C. O’Malley,
-James J. Chambers, Samuel P. Hazen</p>
-<p><a href="https://doi.org/10.1101/2021.02.03.429573" class="uri">https://doi.org/10.1101/2021.02.03.429573</a></p>
+<div class="pub-entry">
+<div class="pub-meta">
+<b> Submitted </b> · Molecular Systems Biology
+</div>
+<div class="pub-title">
+<b> Combinatorial effects of transcription factors functionally revealed
+by single cell TARGET-seq </b>
+</div>
+<div class="pub-authors">
+Amélie Emanuel, Jean-Baptiste Carluer, Will E. Hinckley, Baldwin
+Dumortier, Samantha Frangos, <b>Kirk MacKinnon</b>, Bruno Guillotin, Tim
+L. Jeffers, Yitao Long, Manpreet Katari, Dennis Shasha, Angelo Pasquino,
+Matthew D. Brooks, Stéphanie Pateyron, Myriam Boyer-Clavel, Stéphanie
+Boireau, Wojciech Szponarski, Hatem Rouached, Sandrine Ruffel, André
+Mas, Gloria Coruzzi, Bastiaan O. Bargmann, Etienne Delannoy
+</div>
+</div>
 <hr>
-<p><b> 2020 </b> New Phytologist</p>
-<p><b> Changes in ambient temperature are the prevailing cue in
-determining <i><i> Brachypodium distachyon </i></i> diurnal gene
-regulation </b></p>
-<p><b> Kirk J-M. MacKinnon </b>, Benjamin J. Cole, Chang Yu, Joshua H.
-Coomey, Nolan T. Hartwick, Marie‐Stanislas Remigereau, Tomás Duffy, Todd
-P. Michael, Steve A. Kay, Samuel P. Hazen</p>
-<p><a href="https://doi.org/10.1111/nph.16507" class="uri">https://doi.org/10.1111/nph.16507</a></p>
+<div class="pub-entry">
+<div class="pub-meta">
+<b> 2024 </b> · Quantitative Plant Biology
+</div>
+<div class="pub-title">
+<b> Mechanically induced localisation of SECONDARY WALL INTERACTING bZIP
+is associated with thigmomorphogenic and secondary cell wall gene
+expression </b>
+</div>
+<div class="pub-authors">
+Joshua H. Coomey, <b>Kirk J.-M. MacKinnon</b>, Ian W. McCahill, Bahman
+Khahani, Pubudu P. Handakumbura, Gina M. Trabucco, Jessica Mazzola,
+Nicole A. Leblanc, Rithany Kheam, Miriam Hernandez-Romero, Kerrie Barry,
+Lifeng Liu, Ji E. Lee, John P. Vogel, Ronan C. O’Malley, James J.
+Chambers, Samuel P. Hazen
+</div>
+<div class="pub-link">
+<a href=" https://doi.org/10.1017/qpb.2024.5 " target="_blank">
+https://doi.org/10.1017/qpb.2024.5 </a>
+</div>
+</div>
 <hr>
-<p><b> 2018 </b> The Plant Journal</p>
-<p><b> <i><scp>SECONDARY WALL ASSOCIATED MYB</scp>1</i> is a positive
-regulator of secondary cell wall thickening in <i><i> Brachypodium
-distachyon </i></i> and is not found in the Brassicaceae </b></p>
-<p>Pubudu P. Handakumbura, Kathryn Brow, Ian P. Whitney, Kangmei Zhao,
+<div class="pub-entry">
+<div class="pub-meta">
+<b> 2020 </b> · New Phytologist
+</div>
+<div class="pub-title">
+<b> Changes in ambient temperature are the prevailing cue in determining
+<i>Brachypodium distachyon</i> diurnal gene regulation </b>
+</div>
+<div class="pub-authors">
+<b>Kirk J.-M. MacKinnon</b>, Benjamin J. Cole, Chang Yu, Joshua H.
+Coomey, Nolan T. Hartwick, Marie-Stanislas Remigereau, Tomás Duffy, Todd
+P. Michael, Steve A. Kay, Samuel P. Hazen
+</div>
+<div class="pub-link">
+<a href=" https://doi.org/10.1111/nph.16507 " target="_blank">
+https://doi.org/10.1111/nph.16507 </a>
+</div>
+</div>
+<hr>
+<div class="pub-entry">
+<div class="pub-meta">
+<b> 2018 </b> · The Plant Journal
+</div>
+<div class="pub-title">
+<b> <i>SECONDARY WALL ASSOCIATED MYB1</i> is a positive regulator of
+secondary cell wall thickening in <i>Brachypodium distachyon</i> and is
+not found in the Brassicaceae </b>
+</div>
+<div class="pub-authors">
+Pubudu P. Handakumbura, Kathryn Brow, Ian P. Whitney, Kangmei Zhao,
 Karen A. Sanguinet, Scott J. Lee, Jennifer Olins, Sandra P.
-Romero‐Gamboa, Michael J. Harrington, Carlisle J. Bascom, <b> Kirk J-M.
-MacKinnon </b>, Michael T. Veling, Lifeng Liu, Ji E. Lee, John P. Vogel,
+Romero-Gamboa, Michael J. Harrington, Carlisle J. Bascom, <b>Kirk J.-M.
+MacKinnon</b>, Michael T. Veling, Lifeng Liu, Ji E. Lee, John P. Vogel,
 Ronan C. O’Malley, Magdalena Bezanilla, Laura E. Bartley, Samuel P.
-Hazen</p>
-<p><a href="https://doi.org/10.1111/tpj.14047" class="uri">https://doi.org/10.1111/tpj.14047</a></p>
+Hazen
+</div>
+<div class="pub-link">
+<a href=" https://doi.org/10.1111/tpj.14047 " target="_blank">
+https://doi.org/10.1111/tpj.14047 </a>
+</div>
+</div>
 <hr>
-<p><b> 2018 </b> Frontiers in Plant Science</p>
-<p><b> Secondary Wall Regulating NACs Differentially Bind at the
-Promoter at a CELLULOSE SYNTHASE A4 Cis-eQTL </b></p>
-<p>Jennifer R. Olins, Li Lin, Scott J. Lee, Gina M. Trabucco, <b> Kirk
-J.-M. MacKinnon </b>, Samuel P. Hazen</p>
-<p><a href="https://doi.org/10.3389/fpls.2018.01895" class="uri">https://doi.org/10.3389/fpls.2018.01895</a></p>
+<div class="pub-entry">
+<div class="pub-meta">
+<b> 2018 </b> · Frontiers in Plant Science
+</div>
+<div class="pub-title">
+<b> Secondary Wall Regulating NACs Differentially Bind at the Promoter
+at a CELLULOSE SYNTHASE A4 Cis-eQTL </b>
+</div>
+<div class="pub-authors">
+Jennifer R. Olins, Li Lin, Scott J. Lee, Gina M. Trabucco, <b>Kirk J.-M.
+MacKinnon</b>, Samuel P. Hazen
+</div>
+<div class="pub-link">
+<a href=" https://doi.org/10.3389/fpls.2018.01895 " target="_blank">
+https://doi.org/10.3389/fpls.2018.01895 </a>
+</div>
+</div>
 <hr>
-<p><b> 2014 </b> PLoS ONE</p>
-<p><b> Daily Changes in Temperature, Not the Circadian Clock, Regulate
-Growth Rate in <i> Brachypodium distachyon </i> </b></p>
-<p>Dominick A. Matos, Benjamin J. Cole, Ian P. Whitney, <b> Kirk J.-M.
-MacKinnon </b>, Steve A. Kay, Samuel P. Hazen</p>
-<p><a href="https://doi.org/10.1371/journal.pone.0100072" class="uri">https://doi.org/10.1371/journal.pone.0100072</a></p>
+<div class="pub-entry">
+<div class="pub-meta">
+<b> 2014 </b> · PLoS ONE
+</div>
+<div class="pub-title">
+<b> Daily Changes in Temperature, Not the Circadian Clock, Regulate
+Growth Rate in <i>Brachypodium distachyon</i> </b>
+</div>
+<div class="pub-authors">
+Dominick A. Matos, Benjamin J. Cole, Ian P. Whitney, <b>Kirk J.-M.
+MacKinnon</b>, Steve A. Kay, Samuel P. Hazen
+</div>
+<div class="pub-link">
+<a href=" https://doi.org/10.1371/journal.pone.0100072 " target="_blank">
+https://doi.org/10.1371/journal.pone.0100072 </a>
+</div>
+</div>
 <hr>
 <div class="graph-wrap">
 <p><object type="image/svg+xml" data="pubtimecourse.svg" class="graph-svg"></object></p>
