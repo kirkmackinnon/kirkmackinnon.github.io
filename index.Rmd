@@ -200,42 +200,72 @@ for (i in seq_len(nrow(pubsdf))) {
 
 <br>
 
-```{r, results = "asis"}
+```{r applications, results = "asis", echo = FALSE}
 
-tribble(
-  ~url, ~desc, ~image,
-  "https://hazenlab.shinyapps.io/shinyapp/", "Timecourse RNA-seq", "tcthumbnail.png",
-  "https://hazenlab.shinyapps.io/swiztc/", "Touch Responsive Timecourse RNA-seq", "swiztcthumbnail.png",  
-  "https://hazenlab.shinyapps.io/snd2r/", "Gain and loss of function RNA-seq", "snd2rthumbnail.png"
-) -> sites
-sites <- as.data.frame(sites)
+apps <- tibble::tribble(
 
+  ~name, ~desc, ~url, ~image,
 
-for (lines in 1:nrow(sites)) {
+  "Timecourse RNA-seq",
+
+  "Interactive exploration of time-course RNA-seq expression patterns.",
+
+  "https://hazenlab.shinyapps.io/shinyapp/",
+
+  "tcthumbnail.png",
+
+  
+
+  "Touch Responsive Timecourse RNA-seq",
+
+  "Visualization of gene expression responses following touch/mechanical stimulation.",
+
+  "https://hazenlab.shinyapps.io/swiztc/",
+
+  "swiztcthumbnail.png",
+
+  
+
+  "Gain and Loss of Function RNA-seq",
+
+  "Exploration of RNA-seq datasets from gain- and loss-of-function transcriptional regulators.",
+
+  "https://hazenlab.shinyapps.io/snd2r/",
+
+  "snd2rthumbnail.png"
+
+)
+
+for (i in seq_len(nrow(apps))) {
+
   cat(
-    "<b>", 
-    sites[lines, "desc"], 
-    "</b>", 
-    
-    "\n\n",
-    
-    "<div class='myin'>",
-    "<p>",
-    "[![](",
-    sites[lines, "image"],
-    "){width=250}](",
-    sites[lines,"url"],
-    
-    ")",
-    
-    "\n\n",
-    "<div class='myin'>",
-    sites[lines, "url"], 
-    "</p>",
-    "</div>",
-    "</div>",
-    "<hr>", 
-    "\n\n")
+
+    "<div class='app-card'>",
+
+      "<div class='app-image'>",
+
+        "<a href='", apps$url[i], "' target='_blank'>",
+
+          "<img src='", apps$image[i], "' alt='", apps$name[i], "'>",
+
+        "</a>",
+
+      "</div>",
+
+      "<div class='app-text'>",
+
+        "<h3>", apps$name[i], "</h3>",
+
+        "<p>", apps$desc[i], "</p>",
+
+        "<a class='app-link' href='", apps$url[i], "' target='_blank'>Open application</a>",
+
+      "</div>",
+
+    "</div>"
+
+  )
+
 }
 ```
 

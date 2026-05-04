@@ -168,3 +168,65 @@ h3 {
 .header-right a:hover {
   text-decoration: underline;
 }
+
+.header-right {
+  opacity: 0.85;
+}
+
+.app-card {
+
+  display: flex;
+
+  gap: 1.5rem;
+
+  align-items: center;
+
+  padding: 1.5rem 0;
+
+  border-bottom: 1px solid #d8dee6;
+
+}
+
+.app-image img {
+
+  width: 220px;
+
+  max-width: 100%;
+
+  border-radius: 6px;
+
+  border: 1px solid #d8dee6;
+
+}
+
+.app-text h3 {
+
+  margin: 0 0 0.4rem 0;
+
+  font-size: 1.35rem;
+
+}
+
+.app-text p {
+
+  margin: 0 0 0.75rem 0;
+
+  line-height: 1.5;
+
+}
+
+.app-link {
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  font-size: 0.95rem;
+
+  text-decoration: none;
+
+}
+
+.app-link:hover {
+
+  text-decoration: underline;
+
+}
