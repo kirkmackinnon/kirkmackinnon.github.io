@@ -202,7 +202,7 @@ for (i in seq_len(nrow(pubsdf))) {
 <div class="section-header">
 <h2>Applications</h2>
 <div class="section-intro">
-Applications for exploring transcriptional regulation and RNA-seq datasets, designed for intuitive exploration of gene expression dynamics and regulatory behavior.
+Interactive tools for exploring transcriptional regulation and RNA-seq datasets, designed for intuitive exploration of gene expression dynamics and regulatory behavior.
 </div>
 </div>
 
