@@ -305,3 +305,60 @@ h3 {
   border: 1px solid #e5e7eb;
   box-shadow: 0 8px 24px rgba(0,0,0,0.04);
 }
+
+.section-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;   /* was probably ~2rem */
+  align-items: baseline;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.section-header {
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-intro {
+  max-width: 950px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.section-intro {
+  padding-left: 1rem;
+}
+
+.video-card,
+.app-card {
+  max-width: 900px;
+  margin: 1.5rem auto;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+.section-header:first-of-type h2 {
+  margin-top: 0;
+}
+
+.section-block {
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  padding-left: 1.2rem;
+  border-left: 2px solid #e5e7eb;
+}

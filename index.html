@@ -458,6 +458,53 @@ background: white;
 .cv-wrap {
 border: 1px solid #e5e7eb;
 box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+.section-header {
+display: grid;
+grid-template-columns: auto 1fr;
+gap: 1rem; 
+align-items: baseline;
+max-width: 900px;
+margin: 0 auto 2rem auto;
+}
+.section-desc {
+font-size: 1.05rem;
+line-height: 1.6;
+color: #4b5563;
+}
+.section-header {
+max-width: 900px;
+margin: 0 auto 1rem auto;
+}
+.section-header h2 {
+font-size: 2rem;
+margin-bottom: 0.5rem;
+}
+.section-intro {
+max-width: 950px;
+font-size: 1.5rem;
+line-height: 1.6;
+color: #4b5563;
+}
+.section-intro {
+padding-left: 1rem;
+}
+.video-card,
+.app-card {
+max-width: 900px;
+margin: 1.5rem auto;
+}
+h2 {
+margin-top: 3rem;
+}
+.section-header:first-of-type h2 {
+margin-top: 0;
+}
+.section-block {
+max-width: 900px;
+margin: 0 auto 3rem auto;
+padding-left: 1.2rem;
+border-left: 2px solid #e5e7eb;
 }</style>
 
 
@@ -745,12 +792,17 @@ https://doi.org/10.1371/journal.pone.0100072 </a>
 </div>
 <div id="exploration" class="section level2">
 <h2>Exploration</h2>
-<div id="interactive-tools" class="section level3">
-<h3>Interactive Tools</h3>
+<div class="section-block">
+<div class="section-header">
+<h2>
+Applications
+</h2>
+<div class="section-intro">
 <p>Applications for exploring transcriptional regulation and RNA-seq
 datasets, designed for intuitive exploration of gene expression dynamics
 and regulatory behavior.</p>
-<p><br></p>
+</div>
+</div>
 <div class="app-card">
 <div class="app-image">
 <a href=" https://hazenlab.shinyapps.io/shinyapp/ " target="_blank">
@@ -804,11 +856,17 @@ application</a>
 </div>
 </div>
 </div>
-<div id="visualizations" class="section level3">
-<h3>Visualizations</h3>
-<p>High-resolution time-lapse imaging of <em>Brachypodium
-distachyon</em> growth under controlled light and temperature regimes,
-illustrating diurnal dynamics and environmental responses.</p>
+<div class="section-block">
+<div class="section-header">
+<h2>
+Visualizations
+</h2>
+<div class="section-intro">
+<p>High-resolution time-lapse imaging of <i>Brachypodium distachyon</i>
+under controlled light and temperature regimes, capturing diurnal growth
+dynamics and environmental responses.</p>
+</div>
+</div>
 <div class="video-card">
 <div class="video-embed">
 <iframe role="img" src=" https://www.youtube.com/embed/MpxTxPAsa5I " frameborder="0" allowfullscreen></iframe>
@@ -861,9 +919,9 @@ LLHH
 </p>
 </div>
 </div>
+</div>
 <div class="graph-wrap">
 <p><object type="image/svg+xml" data="applications-offset.svg" class="graph-svg"></object></p>
-</div>
 </div>
 </div>
 <div id="cv" class="section level2">

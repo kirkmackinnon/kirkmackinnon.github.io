@@ -197,10 +197,17 @@ for (i in seq_len(nrow(pubsdf))) {
 
 ## Exploration
 
-### Interactive Tools
-Applications for exploring transcriptional regulation and RNA-seq datasets, designed for intuitive exploration of gene expression dynamics and regulatory behavior.
+<div class="section-block">
 
-<br>
+<div class="section-header">
+<h2>Applications</h2>
+<div class="section-intro">
+Applications for exploring transcriptional regulation and RNA-seq datasets, designed for intuitive exploration of gene expression dynamics and regulatory behavior.
+</div>
+</div>
+
+
+
 
 ```{r applications, results = "asis", echo = FALSE}
 
@@ -273,8 +280,17 @@ for (i in seq_len(nrow(apps))) {
 
 ```
 
-### Visualizations
-High-resolution time-lapse imaging of *Brachypodium distachyon* growth under controlled light and temperature regimes, illustrating diurnal dynamics and environmental responses.
+  
+
+</div>
+
+<div class="section-block">
+<div class="section-header">
+<h2>Visualizations</h2>
+<div class="section-intro">
+High-resolution time-lapse imaging of <i>Brachypodium distachyon</i> under controlled light and temperature regimes, capturing diurnal growth dynamics and environmental responses.
+</div>
+</div>
 
 ```{r videos, results = "asis", echo = FALSE}
 
@@ -301,7 +317,7 @@ for (i in seq_len(nrow(videos))) {
 }
 ```
 
-
+</div>
 <div class="graph-wrap">
   <object type="image/svg+xml" data="applications-offset.svg" class="graph-svg"></object>
 </div>
