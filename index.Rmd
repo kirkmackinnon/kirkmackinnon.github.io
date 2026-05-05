@@ -195,8 +195,10 @@ for (i in seq_len(nrow(pubsdf))) {
   <object type="image/svg+xml" data="pubtimecourse.svg" class="graph-svg"></object>
 </div>
 
+## Exploration
 
-## Applications
+### Interactive Tools
+Applications for exploring transcriptional regulation and RNA-seq datasets, designed for intuitive exploration of gene expression dynamics and regulatory behavior.
 
 <br>
 
@@ -267,8 +269,37 @@ for (i in seq_len(nrow(apps))) {
   )
 
 }
+
+
 ```
 
+### Visualizations
+High-resolution time-lapse imaging of *Brachypodium distachyon* growth under controlled light and temperature regimes, illustrating diurnal dynamics and environmental responses.
+
+```{r videos, results = "asis", echo = FALSE}
+
+videos <- tibble::tribble(
+  ~title, ~desc, ~url,
+  "LDHC", "12h Light (Hot) · 12h Dark (Cold)", "https://www.youtube.com/embed/MpxTxPAsa5I",
+  "LDHH", "12h Light (Hot) · 12h Dark (Hot)",  "https://www.youtube.com/embed/0DGGTCytUvA",
+  "LLHC", "12h Light (Hot) · 12h Light (Cold)", "https://www.youtube.com/embed/YGTfY5GpgaM",
+  "LLHH", "24h Light (Hot)", "https://www.youtube.com/embed/-vH3HG1JIJc"
+)
+
+for (i in seq_len(nrow(videos))) {
+  cat(
+    "<div class='video-card'>",
+      "<div class='video-embed'>",
+        "<iframe src='", videos$url[i], "' frameborder='0' allowfullscreen></iframe>",
+      "</div>",
+      "<div class='video-text'>",
+        "<h3>", videos$title[i], "</h3>",
+        "<p class='video-meta'>", videos$desc[i], "</p>",
+      "</div>",
+    "</div>"
+  )
+}
+```
 
 
 <div class="graph-wrap">
@@ -280,7 +311,11 @@ for (i in seq_len(nrow(apps))) {
 
 [Download CV (PDF)](CVTest.pdf)
 
-![](CVTest.pdf){width="100%" height="1000"}
+<div class="cv-wrap">
+
+  <embed src="CVTest.pdf" type="application/pdf" class="cv-embed">
+
+</div>
 
 <div class="graph-wrap">
   <object type="image/svg+xml" data="cv-period.svg" class="graph-svg"></object>
