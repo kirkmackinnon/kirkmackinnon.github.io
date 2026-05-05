@@ -363,3 +363,71 @@ h2 {
   border-right: 2px solid #e5e7eb;
   border-bottom: 2px solid #e5e7eb;
 }
+
+.network-bg {
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  width: 260px;
+  opacity: 0.12;        /* key tuning parameter */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.network-bg object {
+  width: 100%;
+  height: auto;
+}
+
+.network-bg svg circle {
+  opacity: 0.6;
+}
+
+.network-wrap {
+  position: fixed;
+  left: -40px;
+  top: -20px;
+  width: 100%;
+  opacity: .2;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.network-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-wrap {
+  position: absolute;   /* or relative if already placed */
+  top: 120px;           /* adjust based on your layout */
+  right: 80px;
+  width: 220px;
+}
+
+.contact-info {
+  position: relative;
+  z-index: 2;
+  text-align: right;
+}
+
+.top-contact {
+  max-width: 900px;
+  margin: 0 auto 0.5rem auto;
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #6b7280;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+.top-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.top-contact a:hover {
+  text-decoration: underline;
+}

@@ -504,6 +504,64 @@ margin: 0 auto 3rem auto;
 padding-left: 1.2rem;
 border-right: 2px solid #e5e7eb;
 border-bottom: 2px solid #e5e7eb;
+}
+.network-bg {
+position: absolute;
+top: -40px;
+right: -60px;
+width: 260px;
+opacity: 0.12; 
+z-index: 1;
+pointer-events: none;
+}
+.network-bg object {
+width: 100%;
+height: auto;
+}
+.network-bg svg circle {
+opacity: 0.6;
+}
+.network-wrap {
+position: fixed;
+left: -40px;
+top: -20px;
+width: 100%;
+opacity: .2;
+pointer-events: none;
+z-index: -1;
+}
+.network-svg {
+width: 100%;
+height: auto;
+display: block;
+}
+.contact-wrap {
+position: absolute; 
+top: 120px; 
+right: 80px;
+width: 220px;
+}
+.contact-info {
+position: relative;
+z-index: 2;
+text-align: right;
+}
+.top-contact {
+max-width: 900px;
+margin: 0 auto 0.5rem auto;
+padding-top: 0.5rem;
+font-size: 1.5rem;
+color: #6b7280;
+display: flex;
+justify-content: flex-end;
+gap: 0.6rem;
+}
+.top-contact a {
+color: inherit;
+text-decoration: none;
+}
+.top-contact a:hover {
+text-decoration: underline;
 }</style>
 
 
@@ -607,7 +665,12 @@ display: none;
 </div>
 
 
-<p><br><br></p>
+<div class="top-contact">
+<p><span><a href="mailto:km5767@nyu.edu">km5767@nyu.edu</a></span>
+<span>·</span>
+<span><a href="https://github.com/kirkmackinnon">GitHub</a></span>
+<span>·</span> <span><a href="CVTest.pdf">CV</a></span></p>
+</div>
 <div id="section" class="section level1 tabset tabset-fade">
 <h1 class="tabset tabset-fade"></h1>
 <div id="about-me" class="section level2">
@@ -617,13 +680,6 @@ display: none;
 <h1>
 Hi, I’m Kirk.
 </h1>
-</div>
-<div class="header-right">
-<p>
-<p><a href="mailto:km5767@nyu.edu">km5767@nyu.edu</a><br>
-<a href="https://github.com/kirkmackinnon">GitHub</a><br>
-<a href="CVTest.pdf">CV</a></p>
-</p>
 </div>
 </div>
 <div class="myin">

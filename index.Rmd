@@ -22,7 +22,14 @@ library(rcrossref)
 library(knitr)
 ```
 
-<br><br>
+<div class="top-contact">
+<span><a href="mailto:km5767@nyu.edu">km5767@nyu.edu</a></span>
+<span>·</span>
+<span><a href="https://github.com/kirkmackinnon">GitHub</a></span>
+<span>·</span>
+<span><a href="CVTest.pdf">CV</a></span>
+</div>
+
 
 #  {.tabset .tabset-fade}
 
@@ -32,17 +39,11 @@ library(knitr)
 <div class="header-left">
 <h1>Hi, I’m Kirk.</h1>
 </div>
-<div class="header-right">
-<p>
 
-<a href="mailto:km5767@nyu.edu">km5767@nyu.edu</a><br>
-<a href="https://github.com/kirkmackinnon">GitHub</a><br>
-<a href="CVTest.pdf">CV</a>
-
-</p>
-</div>
 
 </div>
+
+
 <div class="myin">
 Thanks for your interest. I am a molecular and computational biologist focused on understanding gene regulatory networks through integrated genomic approaches, including RNA-seq, DAP-seq, and related datasets.
 
@@ -336,3 +337,4 @@ for (i in seq_len(nrow(videos))) {
 <div class="graph-wrap">
   <object type="image/svg+xml" data="cv-period.svg" class="graph-svg"></object>
 </div>
+
