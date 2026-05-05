@@ -338,3 +338,12 @@ for (i in seq_len(nrow(videos))) {
   <object type="image/svg+xml" data="cv-period.svg" class="graph-svg"></object>
 </div>
 
+<script>
+  document.body.classList.add('page-load');
+
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      document.body.classList.remove('page-load');
+    }, 1200);  // slightly longer than your animation
+  });
+</script>

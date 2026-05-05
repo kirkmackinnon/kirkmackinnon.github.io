@@ -448,70 +448,30 @@ h2 {
   animation-delay: 2s;
 }
 
-@keyframes fadeInContact {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Default state (no animation) */
+.myin, .signature, .graph-wrap, .top-contact {
+  opacity: 1;
 }
 
-.nav-tabs {
-  max-width: 900px;
-  margin: 0 auto 1.5rem auto;
-
+/* Only animate when page first loads */
+body.page-load .myin,
+body.page-load .signature {
   opacity: 0;
-  transform: translateY(-6px);
-  animation: fadeInTabs 0.6s ease-out forwards;
-  animation-delay: 1.5s;
-}
-
-@keyframes fadeInTabs {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.tab-content {
-  opacity: 0;
-  animation: fadeInContent 0.8s ease-out forwards;
-  animation-delay: 0.5s;
-}
-
-@keyframes fadeInContent {
-  to {
-    opacity: 1;
-  }
-}
-
-.graph-wrap {
-
-  opacity: 0;
-
-  animation: fadeInGraph 0.9s ease-out forwards;
-
-  animation-delay: 0.25s;  /* graph loads last */
-
-}
-
-@keyframes fadeInGraph {
-
-  to { opacity: 0.6; }
-
-}
-
-.myin, .signature {
-
-  opacity: 0;
-
   animation: fadeInText 0.7s ease-out forwards;
+  animation-delay: 0.35s;
+}
 
-  animation-delay: 1s;
-
+body.page-load .graph-wrap,
+body.page-load .top-contact {
+  opacity: 0;
+  animation: fadeInGraph 0.9s ease-out forwards;
+  animation-delay: 1.0s;
 }
 
 @keyframes fadeInText {
-
   to { opacity: 1; }
+}
 
+@keyframes fadeInGraph {
+  to { opacity: 0.6; }
 }
